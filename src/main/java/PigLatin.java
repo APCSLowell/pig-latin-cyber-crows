@@ -36,12 +36,13 @@ public class PigLatin {
   String o="o";
   String u="u";
   for(int i=0;i<sWord.length();i++){
-    if(sWord.substring(i,i+1).equals(a) ||sWord.substring(i,i+1).equals(e)||sWord.substring(i,i+1).equals(t)||sWord.substring(i,i+1).equals(o)||sWord.substring(i,i+1).equals(u)){
+    if(sWord.substring(i,i+1).equals(a) ||sWord.substring(i,i+1).equals(e)||sWord.substring(i,i+1).equals(t)||sWord.substring(i,i+1).equals(o)||sWord.substring(i,i+1).equals(u))
+    {
       return i;
     }
         return -1;
     }
-
+    }
     public String pigLatin(String sWord) {
         //precondition: sWord is a valid String of length greater than 0
         //postcondition: returns the pig latin equivalent of sWord
